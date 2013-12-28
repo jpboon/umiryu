@@ -10,11 +10,11 @@
 
 @interface Exam : NSObject
 
-@property (assign, nonatomic) int grade;
-@property (assign, nonatomic) BOOL kihon;
-@property (assign, nonatomic) BOOL words;
-@property (assign, nonatomic) BOOL feets;
-@property (assign, nonatomic) BOOL subs;
+@property (assign, nonatomic, readwrite) int grade;
+@property (assign, nonatomic, readwrite) BOOL kihon;
+@property (assign, nonatomic, readwrite) BOOL words;
+@property (assign, nonatomic, readwrite) BOOL feets;
+@property (assign, nonatomic, readwrite) BOOL subs;
 
 - (id)initWithFeets:(BOOL)feets kihon:(BOOL)kihon words:(BOOL)words subs:(BOOL)subs;
 

@@ -10,17 +10,18 @@
 #import "Exam.h"
 
 @interface ExamViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UITextField *txtAnswer;
-- (IBAction)btnEndExam:(id)sender;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *btnEndExam;
 @property (weak, nonatomic) IBOutlet UILabel *lblWords;
 @property (weak, nonatomic) IBOutlet UILabel *lblExplain;
 @property (weak, nonatomic) IBOutlet UILabel *lblTopExplain;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *btnCheat;
-- (IBAction)btnCheat:(id)sender;
-
 @property (nonatomic, strong) Exam *exam;
+
+- (IBAction)btnCheat:(id)sender;
+- (IBAction)btnEndExam:(id)sender;
 
 typedef enum {
     start,

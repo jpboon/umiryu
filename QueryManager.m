@@ -10,6 +10,7 @@
 
 @implementation QueryManager
 
+// get a set of rules
 +(NSArray *)getRules {
     NSMutableArray *arr = [[NSMutableArray alloc] init];
     NSString *sql = [NSString stringWithFormat:@"SELECT * FROM rules"];
@@ -25,6 +26,7 @@
     return arr;
 }
 
+// get a set of feetobjects
 +(NSMutableArray *)getFeetsFromGrade:(int)grade withSubGrades:(BOOL)subGrades {
     NSMutableArray *arr = [[NSMutableArray alloc] init];
     NSString *withSubs;
@@ -47,6 +49,7 @@
     return arr;
 }
 
+// get a set of wordobjects
 +(NSMutableArray *)getWordsFromGrade:(int)grade withSubGrades:(BOOL)subGrades {
     NSMutableArray *arr = [[NSMutableArray alloc] init];
     NSString *withSubs;
@@ -70,6 +73,7 @@
     return arr;
 }
 
+// get history from a user
 +(NSArray *)getHistoryFromUser:(NSString *)username {
     NSMutableArray *arr = [[NSMutableArray alloc] init];
     NSString *sql = [NSString stringWithFormat:@"SELECT * FROM history WHERE username = '%@' ORDER BY history_id DESC LIMIT 15",username];
@@ -89,11 +93,13 @@
     return arr;
 }
 
+// save a history object
 +(void)saveHistory:(History *)history {
     NSString *sql = [NSString stringWithFormat:@"INSERT INTO history ('username', 'date', 'score', 'grade', 'subgrades') VALUES ('%@', '%@', %d, %d, %d)", history.username, history.date, history.score, history.grade, history.subgrades];
     [DatabaseManager updateQuery:sql];
 }
 
+// get a set of kihonobjects
 +(NSMutableArray *)getKihonsFromGrade:(int)grade withSubGrades:(BOOL)subGrades {
     NSMutableArray *arr = [[NSMutableArray alloc] init];
     NSString *withSubs;
@@ -116,6 +122,7 @@
     return arr;
 }
 
+// get a user
 +(User *)getUser:(NSString *)username {
     
     NSString *sql = [NSString stringWithFormat: @"SELECT * FROM users WHERE username = '%@'", username];
@@ -131,11 +138,13 @@
     return usr;
 }
 
+// add a user
 +(void)addUser:(User *)user{
     NSString *sql = [NSString stringWithFormat:@"INSERT INTO users ('username', 'firstname', 'lastname', 'password') VALUES ('%@', '%@', '%@', '%@')", user.username, user.firstname, user.lastname, user.password];
     [DatabaseManager updateQuery:sql];
 }
 
+// change password from a user
 +(void)changePassword:(NSString *)password ofUser:(NSString *)username{
     NSString *sql = [NSString stringWithFormat:@"UPDATE users SET password = '%@' WHERE username = '%@'", password, username];
     [DatabaseManager updateQuery:sql];

@@ -11,6 +11,7 @@
 #import "GlobalData.h"
 
 @interface ExamViewController () {
+    // private variables
     NSMutableArray *kihonArray;
     NSMutableArray *wordArray;
     NSMutableArray *feetArray;
@@ -24,6 +25,7 @@
     ExamState thisExam;
 }
 
+// private functions
 -(void) setNextState;
 -(void) saveScore;
 
@@ -37,6 +39,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // button titles
     [btnEndExam setTitle:NSLocalizedString(@"EINDEXAMEN", nil)];
     [btnCheat setTitle:NSLocalizedString(@"VALSSPELEN", nil)];
     
@@ -46,7 +49,7 @@
     //get language
     language = [[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0];
     
-    // set swipe gestures to imageView
+    // set swipe gestures
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeRecognized:)];
     [swipeLeft setDirection:UISwipeGestureRecognizerDirectionLeft];
     [self.view addGestureRecognizer:swipeLeft];
@@ -70,16 +73,15 @@
         currentFeetIndex = 0;
     }
     
-    // start exam
+    // explanation of exam
     lblExplain.text = NSLocalizedString(@"UITLEGEXAMEN", nil);
-    
-    
 }
 
+// when swiped from right to left
 -(void)swipeRecognized:(UISwipeGestureRecognizer *) swipe {
     if (swipe.direction == UISwipeGestureRecognizerDirectionLeft) {
 
-        // set textcolor back to black after cheat
+        // set textcolor back to black (if cheated)
         self.txtAnswer.textColor = [UIColor blackColor];
         
         switch (thisExam) {
@@ -286,7 +288,6 @@
     
     // save to database
     [QueryManager saveHistory:newHistory];
-    
 }
 
 - (IBAction)btnEndExam:(id)sender {
@@ -299,6 +300,8 @@
     // go to view
     [self performSegueWithIdentifier:@"2ndHistorySegue" sender:sender];
 }
+
+// cheat by showing the correct answer
 - (IBAction)btnCheat:(id)sender {
     self.txtAnswer.textColor = [UIColor redColor];
     switch (thisExam) {

@@ -5,6 +5,7 @@
 //  Created by johan on 12/11/13.
 //  Copyright (c) 2013 Johan Boon. All rights reserved.
 //
+// Singleton for the current user
 
 #import <Foundation/Foundation.h>
 #import "User.h"

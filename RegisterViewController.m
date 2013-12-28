@@ -22,6 +22,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // button, textfield and label titles
     txtUsername.placeholder = NSLocalizedString(@"GEBRUIKERSNAAM", nil);
     txtPassword.placeholder = NSLocalizedString(@"WACHTWOORD", nil);
     txtFirstname.placeholder = NSLocalizedString(@"VOORNAAM", nil);
@@ -35,7 +36,7 @@
     // get user
     User *usr = [QueryManager getUser:txtUsername.text];
     
-    // check fields are filled
+    // check if fields are filled
     if ([txtUsername.text isEqualToString:@""] ||
         [txtPassword.text isEqualToString:@""] ||
         [txtLastname.text isEqualToString:@""] ||

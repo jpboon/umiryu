@@ -22,10 +22,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // textfield and button titles
 	txtUsername.placeholder = NSLocalizedString(@"GEBRUIKERSNAAM", nil);
     txtPassword.placeholder = NSLocalizedString(@"WACHTWOORD", nil);
     [btnLogin setTitle:NSLocalizedString(@"INLOGGEN", nil) forState:UIControlStateNormal];
     [btnRegister setTitle:NSLocalizedString(@"AANMELDEN", nil) forState:UIControlStateNormal];
+    // show keyboard
     [txtUsername becomeFirstResponder];
 }
 
@@ -33,7 +35,7 @@
     // get user
     User *usr = [QueryManager getUser:txtUsername.text];
     
-    // check username not null
+    // check if username not null
     if (usr.username) {
         // check password
         if ([txtPassword.text isEqualToString:usr.password]) {
@@ -43,6 +45,7 @@
             // go to view
             [self performSegueWithIdentifier:@"loginSegue" sender:sender];
         } else {
+            // wrong password alert
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"FOUTPW", nil)
                                                             message:nil
                                                            delegate:self
@@ -51,6 +54,7 @@
             [alert show];
         }      
     } else {
+        // user doesn't exist alert
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"FOUTUSER", nil)
                                                         message:nil
                                                        delegate:self

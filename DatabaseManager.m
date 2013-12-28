@@ -8,7 +8,7 @@
 
 #import "DatabaseManager.h"
 
-//static sqlite3 *db;
+//static sqlite3 database
 static FMDatabase *db;
 
 @implementation DatabaseManager

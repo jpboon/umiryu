@@ -11,7 +11,7 @@
 
 @interface ExamTableViewController : UITableViewController
 
-@property (nonatomic, strong) NSArray *bands;
+@property (nonatomic, strong) NSArray *belts;
 @property (nonatomic, strong) Exam *exam;
 
 @end

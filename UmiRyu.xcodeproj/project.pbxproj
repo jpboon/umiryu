@@ -46,8 +46,6 @@
 		0478FF231857193900D36F19 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0478FF221857193900D36F19 /* RegisterViewController.m */; };
 		0478FF2718571A1E00D36F19 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0478FF2618571A1E00D36F19 /* LoginViewController.m */; };
 		0479E53E185864F8006C47ED /* GlobalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479E53D185864F8006C47ED /* GlobalData.m */; };
-		0479E54A18589487006C47ED /* umiryu_jap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0479E54818589487006C47ED /* umiryu_jap.png */; };
-		0479E54C1858975E006C47ED /* umiryu_jap1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0479E54B1858975E006C47ED /* umiryu_jap1.png */; };
 		0479E54F18589D3A006C47ED /* background1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0479E54D18589D3A006C47ED /* background1.jpg */; };
 		0479E55218589F5D006C47ED /* background2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0479E55118589F5D006C47ED /* background2.jpg */; };
 		0479E55A1858A022006C47ED /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0479E5541858A022006C47ED /* 3.jpg */; };
@@ -131,8 +129,6 @@
 		0478FF2618571A1E00D36F19 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		0479E53C185864F8006C47ED /* GlobalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalData.h; path = UmiRyu/GlobalData.h; sourceTree = "<group>"; };
 		0479E53D185864F8006C47ED /* GlobalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlobalData.m; path = UmiRyu/GlobalData.m; sourceTree = "<group>"; };
-		0479E54818589487006C47ED /* umiryu_jap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = umiryu_jap.png; sourceTree = "<group>"; };
-		0479E54B1858975E006C47ED /* umiryu_jap1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = umiryu_jap1.png; sourceTree = "<group>"; };
 		0479E54D18589D3A006C47ED /* background1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background1.jpg; sourceTree = "<group>"; };
 		0479E55118589F5D006C47ED /* background2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background2.jpg; sourceTree = "<group>"; };
 		0479E5541858A022006C47ED /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -262,8 +258,6 @@
 				0479E54D18589D3A006C47ED /* background1.jpg */,
 				0478F8EB186387E200A24CCE /* false.jpg */,
 				0478F8EC186387E200A24CCE /* true.jpg */,
-				0479E54B1858975E006C47ED /* umiryu_jap1.png */,
-				0479E54818589487006C47ED /* umiryu_jap.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -476,8 +470,6 @@
 				04AFB6AC18561C0200D05745 /* MainStoryboard.storyboard in Resources */,
 				04AFB6D418561CDA00D05745 /* umiryu.sqlite in Resources */,
 				04AFB6DF1856488B00D05745 /* Localizable.strings in Resources */,
-				0479E54A18589487006C47ED /* umiryu_jap.png in Resources */,
-				0479E54C1858975E006C47ED /* umiryu_jap1.png in Resources */,
 				0479E54F18589D3A006C47ED /* background1.jpg in Resources */,
 				0479E55218589F5D006C47ED /* background2.jpg in Resources */,
 				0479E55A1858A022006C47ED /* 3.jpg in Resources */,

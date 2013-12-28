@@ -21,6 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // button and label titles
     [btnHistory setTitle:NSLocalizedString(@"HISTORIE", nil) forState:UIControlStateNormal];
     [btnRules setTitle:NSLocalizedString(@"REGELS", nil) forState:UIControlStateNormal];
     [btnStartExam setTitle:NSLocalizedString(@"STARTEXAMEN", nil) forState:UIControlStateNormal];
@@ -33,7 +34,7 @@
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"examTableSegue"]) {
-        // send switch states to next viewcontroller
+        // send data to next viewcontroller
         ExamTableViewController *etvc = (ExamTableViewController *)[[segue destinationViewController]topViewController];
         
         Exam *newExam = [[Exam alloc]initWithFeets:swFeets.isOn kihon:swKihon.isOn words:swWords.isOn subs:swSubgrades.isOn];
@@ -44,6 +45,7 @@
 - (IBAction)btnStartExam:(id)sender {
     
     if (swFeets.isOn == FALSE && swKihon.isOn == FALSE && swWords.isOn == FALSE) {
+        // alert if not one selection is selected
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"MINIMUMSELECTIE", nil)
                                                         message:nil
                                                        delegate:self
