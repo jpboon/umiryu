@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  project3
+
+  Created by johan on 12/9/13.
+  Copyright (c) 2013 Johan Boon. All rights reserved.
+*/
+
+"GEBRUIKERSNAAM" = "Gebruikersnaam";
+"WACHTWOORD" = "Wachtwoord";
+"INLOGGEN" = "Inloggen";
+"AANMELDEN" = "Aanmelden";
+"BANDSELECTIE" = "Selecteer een band";
+"FOUTPW" = "Fout wachtwoord";
+"FOUTUSER" = "Gebruiker bestaat niet";
+"VOORNAAM" = "Voornaam";
+"ACHTERNAAM" = "Achternaam";
+"OPSLAAN" = "Opslaan";
+"INGEBRUIK" = "Gebruikersnaam bestaat al";
+"VELDLEEG" = "Vul alle velden in";
+"HISTORIE" = "Historie";
+"REGELS" = "Huisregels";
+"STARTEXAMEN" = "Start examen";
+"VOETSTANDEN" = "Voetstanden";
+"LAGEREGRADATIES" = "inclusief lagere gradaties";
+"WOORDEN" = "Woorden";
+"MINIMUMSELECTIE" = "Selecteer minimaal een optie";
+"DATUM" = "Datum";
+"GRAAD" = "Graad";
+"DRUKEINDEXAMEN" = "Druk op Einde Examen";
+"EINDEXAMEN" = "Einde Examen";
+"UITLEGEXAMEN" = "Swype om naar de eerste vraag te gaan, type het antwoord in op de vraag en swype om verder te gaan. Als alle vragen zijn geweest klik je op Einde Examen. Je score wordt dan direct berekend. Veel succes!";
+"UITLEGKIHON" = "Geef het japanse woord voor deze beweging";
+"UITLEGWOORD" = "Geef de japanse betekenis";
+"UITLEGVOET" = "Geef het japanse woord van deze voetstand";
+"VALSSPELEN" = "Vals spelen";
+"UITLOGGEN" = "Uitloggen";

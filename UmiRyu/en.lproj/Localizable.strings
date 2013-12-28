@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  project3
+
+  Created by johan on 12/9/13.
+  Copyright (c) 2013 Johan Boon. All rights reserved.
+*/
+
+"GEBRUIKERSNAAM" = "Username";
+"WACHTWOORD" = "Password";
+"INLOGGEN" = "Login";
+"AANMELDEN" = "Register";
+"BANDSELECTIE" = "Select a band";
+"FOUTPW" = "Wrong password";
+"FOUTUSER" = "User doesn't exist";
+"VOORNAAM" = "Firstname";
+"ACHTERNAAM" = "Lastname";
+"OPSLAAN" = "Save";
+"INGEBRUIK" = "Username already exists";
+"VELDLEEG" = "Fill in all the fields";
+"HISTORIE" = "History";
+"REGELS" = "House rules";
+"STARTEXAMEN" = "Start exam";
+"VOETSTANDEN" = "Feet positions";
+"LAGEREGRADATIES" = "Including lower grades";
+"WOORDEN" = "Words";
+"MINIMUMSELECTIE" = "Select at least one option";
+"DATUM" = "Date";
+"GRAAD" = "Grade";
+"DRUKEINDEXAMEN" = "Press End Exam";
+"EINDEXAMEN" = "End Exam";
+"UITLEGEXAMEN" = "Swype to go to the first question, type in the answer to the question and swype again to go on. After you answered all the qustions, press End Exam. Your score will be calculated. Good luck!";
+"UITLEGKIHON" = "Give the japanese word for this move";
+"UITLEGWOORD" = "Give the japanese meaning";
+"UITLEGVOET" = "Give the japanese word for this feet position";
+"VALSSPELEN" = "Cheat!";
+"UITLOGGEN" = "Logoff";
